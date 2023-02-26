@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2" xmlns="http://www.fsgs.com/SPAD">
   <Variables>
-    <Variable Name="PROFILE:ATC_TOGGLE" Value="0" ValueType="Double" />
+    <Variable Name="PROFILE:ATC_TOGGLE" Value="1" ValueType="Decimal" />
   </Variables>
   <Devices>
     <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#8&amp;29275734&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="3">
@@ -488,6 +488,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_FRACT_INC" />
@@ -498,6 +499,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_FRACT_DEC" />
@@ -508,6 +510,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_WHOLE_INC" />
@@ -518,6 +521,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_WHOLE_DEC" />
@@ -529,6 +533,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -541,6 +546,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_FRACT_INCREASE" />
@@ -551,6 +557,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_FRACT_DECREASE" />
@@ -561,6 +568,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_WHOLE_INCREASE" />
@@ -571,6 +579,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_WHOLE_DECREASE" />
@@ -582,6 +591,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -594,6 +604,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -606,6 +617,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -618,6 +630,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -630,6 +643,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -643,6 +657,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -654,6 +669,7 @@
               <EventDefinition Trigger="RELEASE">
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="PROFILE:ATC_TOGGLE" Value="0" ValueOperation="ToggleBit" />
@@ -666,6 +682,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -680,6 +697,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -694,6 +712,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -708,6 +727,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -722,6 +742,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -736,6 +757,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -750,6 +772,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -764,6 +787,7 @@
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="PROFILE:ATC_TOGGLE" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:ROTOR_BRAKE">
@@ -773,10 +797,7 @@
               </EventDefinition>
               <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
                 <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_MINUTES_INC" />
@@ -784,10 +805,7 @@
               </EventDefinition>
               <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
                 <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_MINUTES_DEC" />
@@ -795,10 +813,7 @@
               </EventDefinition>
               <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
                 <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_HOURS_DEC" />
@@ -806,10 +821,7 @@
               </EventDefinition>
               <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
                 <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_HOURS_INC" />
@@ -849,9 +861,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="10f3def7-899e-45de-88a9-c8ab1bb7136f" Version="0.16">
+  <ProfileInformation ProfileID="10f3def7-899e-45de-88a9-c8ab1bb7136f" Version="0.17">
     <Author>fulatoro[Z-7]</Author>
     <Description />
-    <LastChanged>2023-02-20T14:32:14.4981852-08:00</LastChanged>
+    <LastChanged>2023-02-25T18:49:29.6038942-08:00</LastChanged>
   </ProfileInformation>
 </Profile>
