@@ -590,96 +590,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_34">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_ON" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="RELEASE">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_36">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_ON" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="RELEASE">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_38">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_BOTH" />
-                  <EventActionDelay Delay="100" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO2_BOTH" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="RELEASE">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_OFF" />
-                  <EventActionDelay Delay="100" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO2_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_40">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:NAV_LIGHTS_ON" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="RELEASE">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:NAV_LIGHTS_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_42">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:BEACON_LIGHTS_ON" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="RELEASE">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:BEACON_LIGHTS_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_44">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:TAXI_LIGHTS_SET">
-                    <Parameter Value="1" />
-                  </EventActionControl>
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="RELEASE">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:TAXI_LIGHTS_SET" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="X_AXIS">
             <EventDefinitions>
               <EventDefinition Trigger="VALUE">
@@ -1064,28 +974,209 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_46">
+        </Events>
+        <Extensions />
+      </DevicePage>
+      <Events />
+      <Options>
+        <Option Key="BUTTON_22.InputModifier" Value="Toggle" />
+      </Options>
+      <Extensions />
+    </Device>
+    <Device VendorID="0xFFFF" ProductID="0x07D1" DevicePath="KNOBSTER_1" DeviceIndex="0" Version="3">
+      <DevicePage ID="72c73483-060e-4a22-94be-a6d0c6e32179" IsDefaultPage="true" Name="Default">
+        <Events>
+          <Event BoundTo="KNOBSTER">
             <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
+              <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                </EventConditions>
                 <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:STROBES_ON" />
-                  <EventActionDelay Delay="500" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:C310_SW_LIGHTS_LANDING" Value="0" />
-                  <EventActionDelay Delay="5000" />
-                  <EventActionDelay Delay="5000" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:LANDING_LIGHTS_ON" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_MINUTES_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_MINUTES_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_HOURS_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:CLOCK_HOURS_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_FRACT_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_FRACT_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_WHOLE_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM_RADIO_WHOLE_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_FRACT_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_FRACT_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_WHOLE_DECREASE" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_WHOLE_INC" />
                 </EventActions>
               </EventDefinition>
               <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
                 <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:C310_SW_LIGHTS_LANDING" Value="2" />
-                  <EventActionDelay Delay="5000" />
-                  <EventActionDelay Delay="5000" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:C310_SW_LIGHTS_LANDING" Value="1" />
-                  <EventActionDelay Delay="500" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:LANDING_LIGHTS_OFF" />
-                  <EventActionDelay Delay="500" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:STROBES_OFF" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_SWAP">
+                    <Parameter Value="1" />
+                  </EventActionControl>
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_FRACT_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_FRACT_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_WHOLE_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_WHOLE_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X044F0X0409_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_34" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_36" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_38" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_SWAP">
+                    <Parameter Value="1" />
+                  </EventActionControl>
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -1094,9 +1185,6 @@
         <Extensions />
       </DevicePage>
       <Events />
-      <Options>
-        <Option Key="BUTTON_22.InputModifier" Value="Toggle" />
-      </Options>
       <Extensions />
     </Device>
   </Devices>
@@ -1125,9 +1213,12 @@
     <Option Key="Ultimarc.PacLed64.EnableVirtualPower" Value="True" />
     <Option Key="Ultimarc.PacLed64.Brightness" Value="128" />
   </Options>
-  <ProfileInformation ProfileID="e1680ccc-0e0b-4ba3-aaec-92feb77d5193" Version="3.1">
+  <CustomClientEvents>
+    <CustomClientEvent Name="GTN750 COM SWAP" EventID="H:GTN750_GTN_COM_Switch" SubCategory="GTN750" IsGlobal="true">H:GTN750_GTN_COM_Switch</CustomClientEvent>
+  </CustomClientEvents>
+  <ProfileInformation ProfileID="e1680ccc-0e0b-4ba3-aaec-92feb77d5193" Version="3.19">
     <Author>The Sim Pilot</Author>
     <Description>&lt;HTML&gt;&lt;BODY&gt;&lt;DIV STYLE="text-align:Left;font-family:Segoe UI;font-style:normal;font-weight:normal;font-size:13;color:#D1D1D1;"&gt;&lt;P&gt;&lt;SPAN&gt;Honeycomb Bravo Profile for Milviz C310R&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;- All Bravo LED lights are working&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;- AP Panel &lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;- Throttles, Flaps, Landing Gear &lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;- First three switches control Battery, Alternator and Magnetos&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;- The rest of the switches are for Nav Lights, Beacon, Taxi, Landing and Strobes combined on last switch.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/BODY&gt;&lt;/HTML&gt;</Description>
-    <LastChanged>2023-02-24T22:36:22.5501773-08:00</LastChanged>
+    <LastChanged>2023-03-06T07:10:01.5948818-08:00</LastChanged>
   </ProfileInformation>
 </Profile>
